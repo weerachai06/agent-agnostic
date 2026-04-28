@@ -32,3 +32,27 @@ cp AGENTS.md /path/to/your/project/AGENTS.md
 ## Rules
 
 See [`AGENTS.md`](./AGENTS.md) for the full instruction set.
+
+## Language-specific prompts
+
+### TypeScript
+
+[`typescript/AGENTS.md`](./typescript/AGENTS.md) extends the base rules with TypeScript-specific
+conventions, tooling, and workflow guidance.
+
+Apply it to a TypeScript project:
+
+```bash
+# Copy to your project root
+cp typescript/AGENTS.md /path/to/your/ts-project/AGENTS.md
+
+# Or symlink so updates are picked up automatically
+ln -sf "$(pwd)/typescript/AGENTS.md" /path/to/your/ts-project/AGENTS.md
+```
+
+The file covers:
+- Strict-mode TypeScript conventions (`strict`, no `any`, explicit return types)
+- Tooling baseline (`tsc --noEmit`, ESLint, Prettier, Vitest/Jest)
+- Coding conventions (imports, enums, error handling, async, generics, file naming)
+- Testing conventions and project structure reference
+- Definition of Done and output format
