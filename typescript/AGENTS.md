@@ -1,3 +1,13 @@
+---
+description: TypeScript-specific coding rules that extend the base model-agnostic guidelines, covering strict-mode conventions, tooling baseline, testing, and project structure.
+mode: primary
+model: openrouter/moonshotai/kimi-k2.6
+temperature: 0.1
+permission:
+  edit: deny
+  bash: deny
+---
+
 # Global Agent Rules (Model-Agnostic) — TypeScript Projects
 
 These rules extend the base coding rules and apply to every opencode session on a TypeScript project.

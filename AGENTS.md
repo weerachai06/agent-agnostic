@@ -1,3 +1,13 @@
+---
+description: Global model-agnostic coding rules that apply to every opencode session regardless of the underlying model or language.
+mode: primary
+model: openrouter/moonshotai/kimi-k2.6
+temperature: 0.1
+permission:
+  edit: deny
+  bash: deny
+---
+
 # Global Agent Rules (Model-Agnostic) — Coding
 
 These rules apply to every opencode session.
