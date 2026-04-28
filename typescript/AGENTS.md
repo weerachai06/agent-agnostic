@@ -38,7 +38,7 @@ These rules extend the base coding rules and apply to every opencode session on 
 ## Coding Conventions
 
 - **Imports**: use named imports; avoid default exports in library code.
-- **Enums**: prefer `const enum` or a `as const` map for tree-shakeable builds.
+- **Enums**: prefer `const enum` or an `as const` map for tree-shakeable builds.
 - **Error handling**: use typed error classes (`class AppError extends Error`) rather than throwing raw strings.
 - **Async**: always `await` or return promises explicitly; do not mix callbacks with async/await.
 - **Generics**: constrain with `extends` wherever possible; avoid unconstrained `<T>`.
@@ -57,10 +57,10 @@ These rules extend the base coding rules and apply to every opencode session on 
 ```
 src/
   index.ts          # public entry point
-  <feature>/
+  auth/             # example feature directory (replace with your feature name)
     index.ts        # barrel
-    <feature>.ts    # implementation
-    <feature>.test.ts
+    auth.ts         # implementation
+    auth.test.ts
 tests/              # integration / e2e
 tsconfig.json
 tsconfig.build.json # (optional) emit-only config
